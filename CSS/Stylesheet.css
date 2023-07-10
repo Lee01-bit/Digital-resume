@@ -1,0 +1,147 @@
+/*heading1 styling*/
+h1 {
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+}
+
+/*headind 1&2 styling made transparent and changed color and background color as well as font family*/
+h1,
+h2 {
+    opacity: 0.7;
+    color: whitesmoke;
+    background-color: grey;
+    font-family: sans-serif;
+}
+
+/*header background image*/
+header {
+    background: rgb(175, 175, 175) url("");
+    background-size: 100%;
+    background-position: center;
+}
+
+/*Picture in header styling*/
+.Picture {
+    height: 30%;
+    width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid white;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+}
+
+#intro {
+    opacity: .7;
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-style: oblique;
+}
+
+
+h3 {
+    text-align: left;
+}
+
+/* background image added for the body and font color,size and style set with a margin */
+body {
+    background-image: url("");
+    background-size: cover;
+    font-style: unset;
+    color: white;
+    font-size: large;
+    margin: 20px;
+}
+
+
+/* all content padding */
+p {
+    padding-left: 20px;
+}
+
+/* Nav menu padding added */
+aside {
+    padding: 20px;
+}
+
+/* hyperlink color changed and formatted to change when hovered over */
+a {
+    color: rgb(137, 23, 231);
+    text-decoration: none
+}
+
+a:hover {
+    color: black;
+
+}
+
+/* flex box added to seperate the links to socials from the form */
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex-container>div {
+    width: 45%;
+}
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* Styles for mobile devices */
+@media (max-width: 480px) {
+    [class*=""] {
+        width: 45%;
+    }
+
+    [class*=""] {
+        width: 75%;
+        height: 50px;
+    }
+
+    [class*=""] {
+        width: 75%;
+        height: auto;
+    }
+}
+
+/* Styles for tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    [class*=""] {
+        width: 25%;
+    }
+
+    [class*=""] {
+        width: 75%;
+        height: 60px;
+    }
+
+    [class*=""] {
+        width: 75%;
+        height: auto;
+    }
+}
+
+/* Styles for laptops and desktops */
+@media (min-width: 769px) {
+    [class*=""] {
+        width: 25%;
+    }
+
+    [class*=""] {
+        width: 75%;
+        height: 80px;
+    }
+
+    [class*=""] {
+        width: 75%;
+        height: auto;
+    }
+}
