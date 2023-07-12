@@ -9,15 +9,14 @@ h1 {
 h1,
 h2 {
     opacity: 0.7;
-    color: whitesmoke;
-    background-color:;
+    color: black;
     font-family: sans-serif;
 }
 
 /*header background image*/
 header {
-    background: rgb(175, 175, 175) url("");
-    background-size: 100%;
+    background-image: url("/Digital-resume/Images/pexels-sl-wong-1023953.jpg");
+    background-size: cover;
     background-position: center;
 }
 
@@ -35,21 +34,20 @@ header {
 }
 
 #intro {
-    opacity: ;
-    background-color: black;
-    color: white;
+    color: black;
     padding: 0.5rem 1rem;
     font-style: oblique;
 }
 
 aside{ text-align: center;
-background-color: black;
 /* color: white; */
 position: sticky; 
 top: 0px;
 }
 section-2{ position: sticky;
-background-color: black;}
+background-image: url("/Digital-resume/Images/pexels-karolina-grabowska-4210811.jpg");
+background-size: cover;
+background-position: center;}
 
 h3 {
     text-align: left;
@@ -112,7 +110,7 @@ img {
 /* Styles for tablets */
 @media (min-width: 481px) and (max-width: 768px) {
     [class="grid-container2"] { display: grid;
-        grid-template-columns: 1fr 5fr;}
+        grid-template-columns: 1fr 10fr; }
     /* [class="grid-container"] {position: relative;
         position: sticky;
             top: 0px;
@@ -142,5 +140,7 @@ img {
         height: auto;
     }
 }
-footer{ background-color: black;
+footer{ background-image: url("/Digital-resume/Images/pexels-sl-wong-1023953.jpg");
+    background-size: cover;
+    background-position: center;
 padding: 20px;}
