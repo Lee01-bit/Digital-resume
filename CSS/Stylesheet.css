@@ -43,19 +43,17 @@ header {
 }
 
 aside{ text-align: center;
-/* background-color: black;
-color: white; */
+background-color: black;
+/* color: white; */
 position: sticky; 
 top: 0px;
 }
-.grid-container{ display: grid;
-background-color: black;
-grid-template-columns: 1fr 1fr 1fr 1fr;}
+section-2{ position: sticky;
+background-color: black;}
+
 h3 {
     text-align: left;
 }
-.grid-container2 { display: grid;
-grid-template-columns: 1fr 4fr;}
 /* background image added for the body and font color,size and style set with a margin */
 body {
     background-image: url("");
@@ -95,9 +93,10 @@ img {
 
 /* Styles for mobile devices */
 @media (max-width: 480px) {
-    [class*=""] {
-        width: 45%;
-    }
+        
+[class= "grid-container"]{ display: grid;
+    background-color: black;
+    grid-template-columns: 1fr 1fr 1fr 1fr;}
 
     [class*=""] {
         width: 75%;
@@ -112,10 +111,12 @@ img {
 
 /* Styles for tablets */
 @media (min-width: 481px) and (max-width: 768px) {
-    [class*=""] {
-        width: 25%;
-    }
-
+    [class="grid-container2"] { display: grid;
+        grid-template-columns: 1fr 5fr;}
+    /* [class="grid-container"] {position: relative;
+        position: sticky;
+            top: 0px;
+        } */
     [class*=""] {
         width: 75%;
         height: 60px;
@@ -129,10 +130,8 @@ img {
 
 /* Styles for laptops and desktops */
 @media (min-width: 769px) {
-    [class*=""] {
-        width: 25%;
-    }
-
+    [class="grid-container2"] { display: grid;
+        grid-template-columns: 1fr 5fr;}
     [class*=""] {
         width: 75%;
         height: 80px;
@@ -143,3 +142,5 @@ img {
         height: auto;
     }
 }
+footer{ background-color: black;
+padding: 20px;}
