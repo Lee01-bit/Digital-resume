@@ -61,7 +61,7 @@ h3 {
 
 /* background image added for the body and font color,size and style set with a margin */
 body {
-    /* background-image: url("/Digital-resume/Images/pexels-karolina-grabowska-4041203.jpg"); */
+    background-image: url("/Digital-resume/Images/pexels-karolina-grabowska-4041203.jpg");
 
     background-position: center;
     font-style: unset;
@@ -107,7 +107,7 @@ img {
 .flex-container>div {
     width: 65%;
 }
-
+/* form formatting  */
 label, input, select, textarea{
     margin: 5px;
     display: inline-block;
@@ -160,7 +160,7 @@ span{ color: red;}
 
     }
 }
-
+/* background image for footer */
 footer {
     background-image: url("/Digital-resume/Images/pexels-alena-yanovich-14569570.jpg");
     background-size: cover;
