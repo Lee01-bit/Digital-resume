@@ -159,6 +159,7 @@ span{ color: red;}
         width: 30%;
 
     }
+    [class="Picture"]{height: 400px; width: auto;}
 }
 /* background image for footer */
 footer {
