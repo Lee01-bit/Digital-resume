@@ -1,7 +1,7 @@
 /*heading1 styling*/
 h1 {
     text-align: center;
-    color: white margin: 0px;
+    color: white; margin: 0px;
     padding: 20px;
 }
 
@@ -47,7 +47,7 @@ aside {
     position: sticky;
     top: 0px;
 }
-
+/* Code it get the nav bar to be sticky */
 section-2 {
     position: sticky;
     /* background-image: url("/Digital-resume/Images/pexels-emmanuel-codden-168845.jpg"); */
@@ -91,7 +91,7 @@ a:hover {
     color: black;
 
 }
-
+/* Images for in contact section positioning  */
 img {
     margin-left: auto;
     margin-right: auto;
