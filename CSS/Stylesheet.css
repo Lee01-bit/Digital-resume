@@ -17,7 +17,7 @@ h2 {
 
 /*header background image*/
 header {
-    background-image: url("/Digital-resume/Images/pexels-alena-yanovich-14569570.jpg");
+    background-image: url("https://i.postimg.cc/90HyRCNH/wallpaperflare-com-wallpaper-1.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -61,7 +61,7 @@ h3 {
 
 /* background image added for the body and font color,size and style set with a margin */
 body {
-    background-image: url("/Digital-resume/Images/pexels-karolina-grabowska-4041203.jpg");
+    background-image: url("https://i.postimg.cc/90HyRCNH/wallpaperflare-com-wallpaper-1.jpg");
 
     background-position: center;
     font-style: unset;
@@ -162,7 +162,7 @@ span{ color: red;}
 }
 /* background image for footer */
 footer {
-    background-image: url("/Digital-resume/Images/pexels-alena-yanovich-14569570.jpg");
+    background-image: url("https://i.postimg.cc/90HyRCNH/wallpaperflare-com-wallpaper-1.jpg");
     background-size: cover;
     background-position: center;
     padding: 20px;
