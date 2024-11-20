@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0a416be4bf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#services">service</a></li>
+                    <li><a href="#porfolio">Portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="headertext">
+                <p>developer</p>
+                <h1><span>Bradwill</span> Van Niekerk</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    img goes here
+                </div>
+                <div class="about-col-2">
+                    <div class="sub">About me </div>
+                    <p>I’m a Junior Software Developer with a strong foundation in coding and a passion for building
+                        innovative software solutions. I hold a certificate in JavaScript Fundamentals from CodeSpace
+                        Academy, where I
+                        developed a solid understanding of programming languages such as JavaScript.
+                        Through an internships, I have gained hands-on experience with
+                        front-end and back-end technologies, including React, Node.js, and SQL as well as learing
+                        different languages such and Java and Python.
+
+                        I thrive in collaborative environments and am excited about contributing to diverse teams,
+                        tackling complex challenges, and continuing to learn and grow as a developer. My problem-solving
+                        skills, attention to detail, and enthusiasm for continuous improvement make me a valuable asset
+                        to any team. I’m eager to bring my skills and fresh perspective to new opportunities in software
+                        development.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>
+                                    JavaScript
+                                </span><br>
+                                versatile, high-level language used for web development, enabling dynamic content,
+                                interactivity, and server communication on websites.
+                            </li>
+                            <li><span>
+                                    Python
+                                </span><br>
+                                high-level, interpreted programming language known for its simplicity, readability, and
+                                versatility. It supports multiple programming paradigms and is widely used in web
+                                development, data science, automation, and AI.</li>
+                            <li><span>
+                                    HTML/CSS
+                                </span><br>
+                                designing web app interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>
+                                    CapaCiti
+                                </span><br>
+                                Systems development Intern</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>
+                                    CodeSpace Academy
+                                </span><br>
+                                JavaScript Fundamentals</li>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web development</h2>
+                    <p>I create websites, online stores, blogs, web apps, social networks, content management systems,
+                        e-commerce platforms, interactive forms, and integrate APIs, databases, and real-time features
+                        for users.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Back-End development</h2>
+                    <p>I build server-side logic, databases, APIs, and handling user authentication, data processing,
+                        and server management for web applications.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-rocket"></i>
+                    <h2>Full stack</h2>
+                    <p>Design user interfaces, building server-side logic, managing databases, integrating APIs, and
+                        ensuring smooth communication between the client and server.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="porfolio">
+        <h1 class="sub">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="https://i.postimg.cc/8kqGHGKr/Capture.png">
+                <div class="layer">
+                    <h3>Book Connect </h3>
+                    <p>App where you can search for books and view what the book is about</p>
+                    <a><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>bradwill.oostendorp7@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0780398251</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/bradwill-van-niekerk-a02211280/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Bradwill-Van-Niekerk"><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="example@email.com" required>
+                        <textarea name="message" rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links")
+            var tabcontents = document.getElementsByClassName("tab-contents")
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link")
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-link")
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px"
+            }
+        </script>
+</body>
+
+</html>
