@@ -34,7 +34,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-               <img src="https://i.postimg.cc/2Srmgfs9/Bradwillheadshot.png">
+                    <img src="https://i.postimg.cc/2Srmgfs9/Bradwillheadshot.png">
                 </div>
                 <div class="about-col-2">
                     <div class="sub">About me </div>
@@ -151,60 +151,69 @@
                 <img src="https://i.postimg.cc/MprmMzmv/Capture-2.png">
                 <div class="layer">
                     <h3>EcoLink</h3>
-                    <p>An app for unemployed people with servicable skill to </p>
+                    <p>EcoLink is a user-friendly platform where individuals can offer and access a wide range of
+                        services. The app connects skilled service providers with people in need of their expertise,
+                        fostering a community of mutual support and professional growth.</p>
                     <a href="https://e-commerce-project-e24b8.firebaseapp.com/"><i class="fa-solid fa-link"></i></a>
                 </div>
             </div>
         </div>
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>bradwill.oostendorp7@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>0780398251</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/bradwill-van-niekerk-a02211280/" target="_blank"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/Bradwill-Van-Niekerk" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.instagram.com/a5h3r_5ky3/?next=%2F" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>bradwill.oostendorp7@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>0780398251</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/bradwill-van-niekerk-a02211280/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Bradwill-Van-Niekerk" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/a5h3r_5ky3/?next=%2F" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form action="https://formspree.io/f/xkgnzpql" method="POST">
+                            <input type="text" name="Name" placeholder="Name" required>
+                            <input type="email" name="email" placeholder="example@email.com" required>
+                            <textarea name="message" rows="6" placeholder="Message"></textarea>
+                            <button type="submit" id="refreshButton" class="btn btn2">Submit</button>
+                        </form>
 
                     </div>
                 </div>
-                <div class="contact-right">
-                    <form action="https://getform.io/f/adrrdqma" method="POST">
-                        <input type="text" name="Name" placeholder="Name" required>
-                        <input type="email" name="email" placeholder="example@email.com" required>
-                        <textarea name="message" rows="6" placeholder="Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-
-                </div>
             </div>
-        </div>
-        <script>
-            var tablinks = document.getElementsByClassName("tab-links")
-            var tabcontents = document.getElementsByClassName("tab-contents")
+            <script>
+                var tablinks = document.getElementsByClassName("tab-links")
+                var tabcontents = document.getElementsByClassName("tab-contents")
 
-            function opentab(tabname) {
-                for (tablink of tablinks) {
-                    tablink.classList.remove("active-link")
+                function opentab(tabname) {
+                    for (tablink of tablinks) {
+                        tablink.classList.remove("active-link")
+                    }
+                    for (tabcontent of tabcontents) {
+                        tabcontent.classList.remove("active-tab")
+                    }
+                    event.currentTarget.classList.add("active-link")
+                    document.getElementById(tabname).classList.add("active-tab")
                 }
-                for (tabcontent of tabcontents) {
-                    tabcontent.classList.remove("active-tab")
-                }
-                event.currentTarget.classList.add("active-link")
-                document.getElementById(tabname).classList.add("active-tab")
-            }
 
-            var sidemenu = document.getElementById("sidemenu");
-            function openmenu() {
-                sidemenu.style.right = "0";
-            }
-            function closemenu() {
-                sidemenu.style.right = "-200px"
-            }
-        </script>
+                var sidemenu = document.getElementById("sidemenu");
+                function openmenu() {
+                    sidemenu.style.right = "0";
+                }
+                function closemenu() {
+                    sidemenu.style.right = "-200px"
+                }
+                document.getElementById("refreshButton").addEventListener("click", function () {
+                    setTimeout(function () {
+                        location.reload();
+                    }, 4000);
+                });
+            </script>
 </body>
 
 </html>
